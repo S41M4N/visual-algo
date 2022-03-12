@@ -10,10 +10,10 @@ const Item = ({ value, index, active, visited }) => {
     return active ? 'green': '#999';
   };
   const style = {
-    height: `${value  }%`,
+    height: `${value }%`,
     width: '50px',
     background: getColor(),
-    left: `${index * (itemWidth + itemMargin)  }px`,
+    left: `${index * (itemWidth + itemMargin) }px`,
   };
   return (
     <div className='item' style={style}>
