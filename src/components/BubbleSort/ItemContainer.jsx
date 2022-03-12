@@ -1,10 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Item from '../shared/Item';
 
 const ItemContainer = ({ items, position }) => {
-  const getPosition = (index) => {
-    return position.findIndex((e) => e === index);
-  };
+  const getPosition = (index) => position.findIndex((e) => e === index);
 
   return (
     <div className='item-container'>
@@ -13,6 +12,11 @@ const ItemContainer = ({ items, position }) => {
       ))}
     </div>
   );
+};
+
+ItemContainer.propTypes = {
+  items: PropTypes.array.isRequired,
+  position: PropTypes.number.isRequired
 };
 
 export default ItemContainer;

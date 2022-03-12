@@ -20,7 +20,16 @@
   },
   "plugins": ["prettier", "react", "react-hooks"],
   "rules": {
-    "react/function-component-definition": "off",
-    "no-unused-vars": "warn"
+    "react/function-component-definition": 0,
+    "react/state-in-constructor": 0,
+    "no-unused-vars": 1,
+    "react/forbid-prop-types": 0,
+    "no-plusplus": 0,
+    "no-await-in-loop":0,
+    "react/destructuring-assignment": 1,
+    "no-promise-executor-return":0,
+    "no-multiple-empty-lines":2,
+    "indent": ["error", 2],
+    "semi": 2
   }
 }
