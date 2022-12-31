@@ -45,15 +45,22 @@ class BubbleSort extends React.Component {
           // console.log('Updated', this.state.items);
         }
       }
-      await this.setState(prev => ({...prev, iterator: n - i-1}));
+      await this.setState(prev => ({...prev, iterator: n - i - 1}));
     }
   };
 
   render() {
-    const {original, position, x, y,iterator} = this.state;
+    const {original, position, x, y, iterator} = this.state;
 
-    return <ItemContainer items={original} position={position} x={x} y={y}
-      iterator={iterator} />;
+    return (
+      <ItemContainer
+        items={original}
+        position={position}
+        x={x}
+        y={y}
+        iterator={iterator}
+      />
+    );
   }
 }
 

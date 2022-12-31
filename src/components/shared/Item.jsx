@@ -4,19 +4,19 @@ import PropTypes from 'prop-types';
 const itemWidth = 50;
 const itemMargin = 3;
 
-const Item = ({ value, index, active, visited }) => {
+const Item = ({value, index, active, visited}) => {
   const getColor = () => {
-    if(visited) return "#ff6a00";
-    return active ? 'green': '#999';
+    if (visited) return '#ff6a00';
+    return active ? 'green' : '#999';
   };
   const style = {
-    height: `${value }%`,
+    height: `${value}%`,
     width: '50px',
     background: getColor(),
-    left: `${index * (itemWidth + itemMargin) }px`,
+    left: `${index * (itemWidth + itemMargin)}px`,
   };
   return (
-    <div className='item' style={style}>
+    <div className="item" style={style}>
       {value}
     </div>
   );
