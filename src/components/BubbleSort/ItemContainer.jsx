@@ -23,7 +23,7 @@ const ItemContainer = ({items, position, x, y, iterator}) => {
 
 ItemContainer.propTypes = {
   items: PropTypes.array.isRequired,
-  position: PropTypes.number.isRequired,
+  position: PropTypes.array.isRequired,
   x: PropTypes.number.isRequired,
   y: PropTypes.number.isRequired,
   iterator: PropTypes.number.isRequired,

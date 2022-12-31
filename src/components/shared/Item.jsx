@@ -9,12 +9,14 @@ const Item = ({value, index, active, visited}) => {
     if (visited) return '#ff6a00';
     return active ? 'green' : '#999';
   };
+
   const style = {
     height: `${value}%`,
     width: '50px',
     background: getColor(),
     left: `${index * (itemWidth + itemMargin)}px`,
   };
+
   return (
     <div className="item" style={style}>
       {value}
